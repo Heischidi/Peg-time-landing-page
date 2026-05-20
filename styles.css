@@ -1467,6 +1467,21 @@ footer .container {
   color: var(--primary);
 }
 
+.chidi-badge {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  color: var(--primary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 4px;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+}
+
 /* Animations */
 @keyframes pulse {
   0% {
