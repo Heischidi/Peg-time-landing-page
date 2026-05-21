@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //
   // ────────────────────────────────────────────────────────────
 
-  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbxqLzguuSCxunN_DZ0WhuRLxlbY9myNaD_w0dMjBhis-8fhwgPfsvYAkXcSN27wWxJBHw/exec';
+  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbxB-y9ZOrLNosWm3T7OHwyPEBSTWqRTVvofyV0p7jY0d5_gvlnyNj_rJoH-NdSwgWCEOA/exec';
 
   async function submitToSheet(email, ticketId) {
     if (SHEET_URL === 'YOUR_APPS_SCRIPT_WEB_APP_URL_HERE') {
