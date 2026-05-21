@@ -36,6 +36,11 @@
         </svg>
         Peg<span>Time</span>
       </div>
+      <nav class="header-nav">
+        <a href="#about">About</a>
+        <a href="#app-flow">How It Works</a>
+        <a href="#simulator-section">Simulator</a>
+      </nav>
       <a href="#waitlist-section" class="btn-header">Join Waitlist</a>
     </div>
   </header>
@@ -245,6 +250,130 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- About Section: By Winnipeggers for Winnipeggers -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-statement-wrap">
+          <p class="about-annotation">About</p>
+          <h2 class="about-headline text-gradient">By Winnipeggers,<br>for Winnipeggers.</h2>
+        </div>
+        <div class="about-body">
+          <p class="about-lead">
+            PegTime was born out of sheer frustration. We got tired of standing outside in -30°C staring at a bus that Google Maps promised was "on time." So we built something smarter.
+          </p>
+          <p class="about-text">
+            We're a small team of Winnipeg Transit riders who've spent too many mornings frozen at a bus stop on Portage, Pembina, or Graham waiting for buses that run late by habit, not by accident. PegTime learns those habits — by route, by hour, by weather, by day of week — and tells you exactly when you actually need to leave your front door.
+          </p>
+          <p class="about-text">
+            No GPS drain. No guessing. No more arriving 15 minutes early to stand in a blizzard. Just a smart leave-by notification so you stay warm until the last possible second.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">🏙️ Built in Winnipeg</span>
+            <span class="about-tag">🚌 Winnipeg Transit Data</span>
+            <span class="about-tag">🧠 Learns from real delays</span>
+            <span class="about-tag">❄️ Winter-tested</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Flow Section -->
+  <section class="appflow-section" id="app-flow">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">App Flow</div>
+        <h2 class="section-title">How PegTime works for you</h2>
+        <p class="section-desc">Three simple steps between you and never freezing at a bus stop again.</p>
+      </div>
+
+      <div class="appflow-grid">
+
+        <!-- Step 01 -->
+        <div class="appflow-card">
+          <div class="appflow-card-top">
+            <span class="appflow-step-num">01</span>
+            <div class="appflow-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                <path d="M12 2v9"></path>
+                <path d="M8 5h8"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="appflow-title">Pick your stop</h3>
+          <p class="appflow-desc">Enter your Winnipeg Transit stop number or tap a route on the map. No account setup. No permissions. Just your stop.</p>
+          <div class="appflow-detail">
+            <span class="appflow-detail-tag">e.g. Portage &amp; Vaughan — Stop 10060</span>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="appflow-card">
+          <div class="appflow-card-top">
+            <span class="appflow-step-num">02</span>
+            <div class="appflow-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="appflow-title">PegTime crunches the history</h3>
+          <p class="appflow-desc">We analyze real historical delay data for your exact route — factoring in the day of week, time of day, Winnipeg weather, and known bottlenecks like Pembina construction or Graham Ave bunching.</p>
+          <div class="appflow-detail">
+            <span class="appflow-detail-tag">94%+ prediction accuracy</span>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="appflow-card appflow-card--highlight">
+          <div class="appflow-card-top">
+            <span class="appflow-step-num">03</span>
+            <div class="appflow-icon appflow-icon--primary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="appflow-title">You get the real leave-by time</h3>
+          <p class="appflow-desc">Instead of the bus schedule, you get a single clear alert: <strong>"Your Route 11 is running 9 minutes late. Leave home at 5:16 PM — not 5:00."</strong> Stay warm inside until the last second.</p>
+          <div class="appflow-detail">
+            <span class="appflow-detail-tag appflow-detail-tag--glow">🔔 Smart push notification</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- App Flow Example Card -->
+      <div class="appflow-example">
+        <div class="appflow-example-label">Real example — Friday Rush on Portage</div>
+        <div class="appflow-example-row">
+          <div class="appflow-ex-item appflow-ex-item--cross">
+            <div class="appflow-ex-source">Google Maps</div>
+            <div class="appflow-ex-time">5:12 PM</div>
+            <div class="appflow-ex-note">Scheduled. You'd be outside by 5:05.</div>
+          </div>
+          <div class="appflow-ex-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+          <div class="appflow-ex-item appflow-ex-item--glow">
+            <div class="appflow-ex-source">PegTime</div>
+            <div class="appflow-ex-time" style="color: var(--primary);">5:16 PM</div>
+            <div class="appflow-ex-note">Leave-by time. Bus actually arrives 5:21.</div>
+          </div>
+        </div>
+        <div class="appflow-example-saving">You saved <strong>11 minutes</strong> of freezing outside. 🧊→🏠</div>
+      </div>
+
     </div>
   </section>
 
@@ -536,11 +665,12 @@
   <footer>
     <div class="container">
       <div class="footer-left">
-        <strong>PegTime</strong> — Made with love by <span class="chidi-badge">Chidi AI</span> for Winnipeg Transit riders.
+        <strong>PegTime</strong> — Made with love for Winnipeg Transit riders.
       </div>
       <div class="footer-right">
-        <a href="#simulator-section">Live Simulator</a>
-        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#app-flow">App Flow</a>
+        <a href="#simulator-section">Simulator</a>
         <a href="#winnipeg-reality">Why PegTime?</a>
       </div>
     </div>

@@ -198,6 +198,27 @@ header .container {
   border-color: rgba(255, 255, 255, 0.15);
 }
 
+/* Header Nav Links */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.header-nav a:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
 /* Hero Section */
 .hero {
   padding: 60px 0 100px;
@@ -1543,6 +1564,9 @@ footer .container {
 }
 
 @media (max-width: 900px) {
+  .header-nav {
+    display: none;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1642,4 +1666,382 @@ footer .container {
   .mockup-badge {
     display: none; /* Hide floating badges on tiny screens for maximum focus */
   }
+
+  /* About section responsive */
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about-headline {
+    font-size: 40px;
+  }
+  .about-annotation {
+    font-size: 13px;
+  }
+
+  /* App Flow responsive */
+  .appflow-grid {
+    grid-template-columns: 1fr;
+  }
+  .appflow-example-row {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .appflow-ex-arrow {
+    transform: rotate(90deg);
+  }
+  .appflow-ex-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
+.about-section {
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.25), transparent);
+}
+
+.about-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-statement-wrap {
+  position: sticky;
+  top: 100px;
+}
+
+.about-annotation {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary);
+  margin-bottom: 16px;
+  opacity: 0.7;
+  display: block;
+}
+
+.about-headline {
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.about-lead {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.about-tag {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.about-tag:hover {
+  border-color: rgba(0, 229, 255, 0.25);
+  color: var(--text-primary);
+  background: rgba(0, 229, 255, 0.05);
+}
+
+/* ============================================
+   APP FLOW SECTION
+   ============================================ */
+
+.appflow-section {
+  padding: 120px 0;
+  position: relative;
+}
+
+.appflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.appflow-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.appflow-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  transition: var(--transition);
+}
+
+.appflow-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(0, 229, 255, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.appflow-card:hover::before {
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.3), transparent);
+}
+
+.appflow-card--highlight {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.07) 0%, rgba(41, 121, 255, 0.07) 100%);
+  border-color: rgba(0, 229, 255, 0.2);
+}
+
+.appflow-card--highlight::before {
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.4), transparent);
+}
+
+.appflow-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.appflow-step-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+.appflow-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.appflow-card:hover .appflow-icon {
+  color: var(--primary);
+  border-color: rgba(0, 229, 255, 0.25);
+  background: rgba(0, 229, 255, 0.05);
+}
+
+.appflow-icon--primary {
+  background: rgba(0, 229, 255, 0.08);
+  border-color: rgba(0, 229, 255, 0.25);
+  color: var(--primary);
+}
+
+.appflow-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--text-primary);
+}
+
+.appflow-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.appflow-desc strong {
+  color: var(--text-primary);
+}
+
+.appflow-detail {
+  margin-top: 8px;
+}
+
+.appflow-detail-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.appflow-detail-tag--glow {
+  color: var(--primary);
+  background: rgba(0, 229, 255, 0.06);
+  border-color: rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.08);
+}
+
+/* App Flow: Example Card */
+.appflow-example {
+  margin-top: 56px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.appflow-example::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.35), transparent);
+}
+
+.appflow-example-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.appflow-example-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.appflow-ex-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px 32px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.appflow-ex-item--cross {
+  opacity: 0.6;
+}
+
+.appflow-ex-item--cross .appflow-ex-time {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.appflow-ex-item--glow {
+  background: rgba(0, 229, 255, 0.05);
+  border-color: rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.08);
+}
+
+.appflow-ex-source {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.appflow-ex-time {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--text-primary);
+}
+
+.appflow-ex-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.appflow-ex-arrow {
+  color: var(--primary);
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.appflow-example-saving {
+  margin-top: 32px;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.appflow-example-saving strong {
+  color: var(--success);
 }
