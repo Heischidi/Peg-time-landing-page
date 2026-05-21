@@ -43,9 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       await fetch(SHEET_URL, {
         method: 'POST',
-        // Apps Script requires no-cors for cross-origin POST
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify({ email, ticket: ticketId })
       });
     } catch (err) {
