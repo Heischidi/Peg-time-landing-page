@@ -39,7 +39,6 @@
       <nav class="header-nav">
         <a href="#about">About</a>
         <a href="#app-flow">How It Works</a>
-        <a href="#simulator-section">Simulator</a>
       </nav>
       <a href="#waitlist-section" class="btn-header">Join Waitlist</a>
     </div>
@@ -89,10 +88,6 @@
             <p>Congratulations! You are officially in line for the Winnipeg Transit revolution. We will email you the moment the beta app goes live.</p>
             <div class="ticker-stats">
               <div class="stat-item">
-                <div class="stat-label">Position</div>
-                <div class="stat-value" id="hero-ticket-pos">#247</div>
-              </div>
-              <div class="stat-item">
                 <div class="stat-label">Estimated Live</div>
                 <div class="stat-value">June 2026</div>
               </div>
@@ -114,142 +109,6 @@
         </div>
       </div>
 
-      <!-- Hero Device Showcase -->
-      <div class="hero-mockup">
-        <!-- Floating badge 1 -->
-        <div class="mockup-badge mockup-badge-1">
-          <div class="badge-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-          </div>
-          <div class="badge-text">
-            <span class="badge-label">Time Saved</span>
-            <span class="badge-val">42 mins/wk</span>
-          </div>
-        </div>
-
-        <!-- Floating badge 2 -->
-        <div class="mockup-badge mockup-badge-2">
-          <div class="badge-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-              <line x1="12" y1="9" x2="12" y2="13"></line>
-              <line x1="12" y1="17" x2="12.01" y2="17"></line>
-            </svg>
-          </div>
-          <div class="badge-text">
-            <span class="badge-label">Portage Delay</span>
-            <span class="badge-val">+14 min late</span>
-          </div>
-        </div>
-
-        <!-- Phone Mockup Frame -->
-        <div class="phone-container">
-          <div class="phone-notch"></div>
-          
-          <!-- Screen content -->
-          <div class="phone-screen">
-            <!-- App Header -->
-            <div class="app-header">
-              <div class="app-title-wrap">
-                <span class="app-subtitle">Active Stop</span>
-                <span class="app-title" id="mockup-stop-name">Portage & Vaughan</span>
-              </div>
-              <div class="app-badge-live">
-                <span class="pulse-dot"></span> Live
-              </div>
-            </div>
-
-            <!-- Route Info Card -->
-            <div class="app-prediction-card" id="mockup-prediction-card">
-              <div class="app-card-top">
-                <div class="app-bus-info">
-                  <div class="app-bus-badge" id="mockup-route-badge">11</div>
-                  <div class="app-bus-meta">
-                    <span class="app-bus-dest" id="mockup-route-dest">Kildonan Place</span>
-                    <span class="app-bus-stop" id="mockup-stop-id">Stop 10060</span>
-                  </div>
-                </div>
-                <div class="app-delay-indicator">
-                  <span class="app-delay-badge delayed" id="mockup-delay-badge">Late (+9 min)</span>
-                  <span class="app-delay-mins" id="mockup-delay-meta">Standard Friday Rush</span>
-                </div>
-              </div>
-
-              <!-- Main Times -->
-              <div class="app-prediction-panel">
-                <div class="prediction-item">
-                  <span class="prediction-label">Scheduled Bus</span>
-                  <span class="prediction-time strike" id="mockup-sched-time">5:12 PM</span>
-                </div>
-                <div class="prediction-divider"></div>
-                <div class="prediction-item" style="text-align: right;">
-                  <span class="prediction-label">PegTime leave-by</span>
-                  <span class="prediction-time highlight" id="mockup-leave-time">5:16 PM</span>
-                </div>
-              </div>
-
-              <!-- Alert Notification Graphic -->
-              <div class="app-alert-box">
-                <div class="app-alert-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                  </svg>
-                </div>
-                <div class="app-alert-text" id="mockup-notification-text">
-                  Leave house in <strong>4 mins</strong>. Do not rush—bus is running behind.
-                </div>
-              </div>
-            </div>
-
-            <!-- Route Timeline Visualizer -->
-            <div class="app-timeline-box">
-              <div class="timeline-info">
-                <span>Pembina Hwy (Downtown-bound)</span>
-                <span id="mockup-timeline-percent">60% complete</span>
-              </div>
-              <div class="timeline-track-container">
-                <div class="timeline-line"></div>
-                <div class="timeline-line-fill" id="mockup-timeline-fill" style="width: 60%;"></div>
-                <div class="timeline-dot start"></div>
-                <div class="timeline-dot bus" id="mockup-timeline-bus" style="left: 60%;"></div>
-                <div class="timeline-dot scheduled" style="left: 85%;"></div>
-                <div class="timeline-dot end"></div>
-                
-                <div class="timeline-labels">
-                  <span>Start Station</span>
-                  <span>Your Stop</span>
-                  <span>Destination</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Historical Learning Panel -->
-            <div class="app-ml-box">
-              <div class="ml-header">
-                <span class="ml-title">delay analysis (friday)</span>
-                <span class="ml-accuracy">94.2% match</span>
-              </div>
-              <div class="ml-chart">
-                <div class="chart-bar" style="height: 30%"></div>
-                <div class="chart-bar" style="height: 45%"></div>
-                <div class="chart-bar" style="height: 85%"></div>
-                <div class="chart-bar active" style="height: 95%"></div>
-                <div class="chart-bar" style="height: 60%"></div>
-                <div class="chart-bar" style="height: 40%"></div>
-                <div class="chart-bar" style="height: 25%"></div>
-              </div>
-              <div class="ticker-text" style="font-size: 9px; margin-top: 4px;">
-                <span class="pulse-dot"></span> Pattern matched Portage Ave construction slowdown
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -377,130 +236,7 @@
     </div>
   </section>
 
-  <!-- Interactive Bus Simulator Section -->
-  <section class="estimator-section" id="simulator-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">Live Simulator</div>
-        <h2 class="section-title">See how much time you're wasting</h2>
-        <p class="section-desc">Select a route and watch PegTime recalculate standard Winnipeg Transit schedules based on real delay patterns.</p>
-      </div>
 
-      <div class="estimator-box">
-        <!-- Controls Side -->
-        <div class="estimator-controls">
-          <!-- Route Choice -->
-          <div class="control-group">
-            <label class="control-label">1. Choose a Winnipeg Route <span>Stop ID Loaded</span></label>
-            <div class="route-options">
-              <button class="route-btn active" data-route="11" data-stop="10060" data-stopname="Portage & Vaughan" data-dest="Kildonan Place">
-                <span class="route-num">11</span>
-                <span class="route-name">Portage Ave</span>
-              </button>
-              <button class="route-btn" data-route="60" data-stop="10624" data-stopname="Pembina at University" data-dest="Downtown">
-                <span class="route-num">60</span>
-                <span class="route-name">Pembina Hwy</span>
-              </button>
-              <button class="route-btn" data-route="BLUE" data-stop="50150" data-stopname="Osborne Rapid Station" data-dest="St. Norbert / U of M">
-                <span class="route-num">BLU</span>
-                <span class="route-name">Rapid Transit</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Scenario Choice -->
-          <div class="control-group">
-            <label class="control-label">2. Trigger Transit Scenario <span>Simulating Live</span></label>
-            <div class="scenario-options">
-              <button class="scenario-btn active" data-scenario="rush">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-                Friday Rush Hour
-              </button>
-              <button class="scenario-btn" data-scenario="winter">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
-                  <line x1="8" y1="16" x2="8.01" y2="16"></line>
-                  <line x1="8" y1="20" x2="8.01" y2="20"></line>
-                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                  <line x1="12" y1="22" x2="12.01" y2="22"></line>
-                  <line x1="16" y1="16" x2="16.01" y2="16"></line>
-                  <line x1="16" y1="20" x2="16.01" y2="20"></line>
-                </svg>
-                -30°C Winnipeg Blizzard
-              </button>
-              <button class="scenario-btn" data-scenario="construction">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="9" y1="9" x2="15" y2="15"></line>
-                  <line x1="15" y1="9" x2="9" y2="15"></line>
-                </svg>
-                Pembina Hwy Construction
-              </button>
-              <button class="scenario-btn" data-scenario="normal">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 8 12 12 14 14"></polyline>
-                </svg>
-                Standard Midday
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Output Side -->
-        <div class="estimator-chart-side">
-          <div>
-            <div class="est-output-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-              </svg>
-              PegTime Calculation
-            </div>
-            <div class="est-output-stop" id="est-stop-display">Portage & Vaughan — Stop 10060</div>
-          </div>
-
-          <div class="estimator-times">
-            <div class="est-time-row strike">
-              <div class="est-time-label">
-                <strong>Scheduled Departure</strong>
-                Winnipeg Transit App / Google Maps
-              </div>
-              <div class="est-time-val" id="est-sched-display">5:12 PM</div>
-            </div>
-
-            <div class="est-time-row highlighted">
-              <div class="est-time-label">
-                <strong>PegTime Prediction</strong>
-                Learned bus arrival threshold
-              </div>
-              <div class="est-time-val" id="est-pred-display">5:21 PM</div>
-            </div>
-
-            <div class="est-time-row">
-              <div class="est-time-label">
-                <strong>Recommended Leave-by Time</strong>
-                Leave home with zero waiting outside
-              </div>
-              <div class="est-time-val" id="est-leave-display">5:16 PM</div>
-            </div>
-          </div>
-
-          <div class="estimator-feedback">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span id="est-feedback-display">Bus delayed by 9 mins due to Portage Ave construction. Leave home 4 mins later than scheduled. Stay warm inside!</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- How It Works Section -->
   <section class="steps-section" id="how-it-works">
@@ -642,10 +378,6 @@
             <p>Congratulations! You are officially in line for the Winnipeg Transit revolution. We will email you the moment the beta app goes live.</p>
             <div class="ticker-stats" style="margin-top: 16px;">
               <div class="stat-item">
-                <div class="stat-label">Beta Position</div>
-                <div class="stat-value" id="cta-ticket-pos">#247</div>
-              </div>
-              <div class="stat-item">
                 <div class="stat-label">Estimated Launch</div>
                 <div class="stat-value">June 2026</div>
               </div>
@@ -670,7 +402,6 @@
       <div class="footer-right">
         <a href="#about">About</a>
         <a href="#app-flow">App Flow</a>
-        <a href="#simulator-section">Simulator</a>
         <a href="#winnipeg-reality">Why PegTime?</a>
       </div>
     </div>
