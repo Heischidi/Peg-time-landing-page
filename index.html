@@ -291,127 +291,8 @@
     </div>
   </section>
 
-  <!-- Local Winnipeg Context Comparison Section -->
-  <section class="comparison-section" id="winnipeg-reality">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">Peg vs The rest</div>
-        <h2 class="section-title">Made for Winnipeg Transit Reality</h2>
-        <p class="section-desc">Why Google Maps leaves you freezing in -40°C on Osborne, and how PegTime adapts to real Winnipeg scenarios.</p>
-      </div>
 
-      <!-- Desktop Table -->
-      <div class="table-container desktop-table">
-        <table class="comp-table">
-          <thead>
-            <tr>
-              <th>Scenario</th>
-              <th>Winnipeg Transit Schedule</th>
-              <th>Google Maps (Scheduled API)</th>
-              <th>PegTime (Historical Learning)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Friday Rush Hour on Portage</td>
-              <td>"Bus is on time at 5:12 PM"</td>
-              <td>"Delayed: arriving 5:16 PM"</td>
-              <td><span class="status-badge green">Leaves house 5:16 PM</span> (Learns delay: bus arrives 5:21 PM)</td>
-            </tr>
-            <tr>
-              <td>-40°C Blizzard & Ice Roads</td>
-              <td>"Standard winter timetable"</td>
-              <td>"Slight delays (+5 mins)"</td>
-              <td><span class="status-badge green">Leaves house 8:28 AM</span> (Learns blizzard delays: bus late 26 mins)</td>
-            </tr>
-            <tr>
-              <td>Pembina Hwy Construction</td>
-              <td>"Refer to summer schedule"</td>
-              <td>"On schedule"</td>
-              <td><span class="status-badge green">Leaves house 12:44 PM</span> (Learns standard lane bottlenecks: late 12 mins)</td>
-            </tr>
-            <tr>
-              <td>Graham Ave Bottlenecks</td>
-              <td>"Buses run every 4 minutes"</td>
-              <td>"Buses every 4 minutes"</td>
-              <td><span class="status-badge green">Alerts backup bundle</span> (Combines bunching bus data to advise route)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
 
-      <!-- Mobile Cards -->
-      <div class="comp-cards mobile-cards">
-
-        <div class="comp-card">
-          <div class="comp-card-scenario">🚌 Friday Rush Hour on Portage</div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Transit Schedule</span>
-            <span class="comp-card-val comp-val-muted">&quot;Bus is on time at 5:12 PM&quot;</span>
-          </div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Google Maps</span>
-            <span class="comp-card-val comp-val-muted">&quot;Delayed: arriving 5:16 PM&quot;</span>
-          </div>
-          <div class="comp-card-row comp-row-highlight">
-            <span class="comp-card-label">PegTime</span>
-            <span class="comp-card-val"><span class="status-badge green">Leaves 5:16 PM</span> — bus arrives 5:21</span>
-          </div>
-        </div>
-
-        <div class="comp-card">
-          <div class="comp-card-scenario">❄️ -40°C Blizzard &amp; Ice Roads</div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Transit Schedule</span>
-            <span class="comp-card-val comp-val-muted">&quot;Standard winter timetable&quot;</span>
-          </div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Google Maps</span>
-            <span class="comp-card-val comp-val-muted">&quot;Slight delays (+5 mins)&quot;</span>
-          </div>
-          <div class="comp-card-row comp-row-highlight">
-            <span class="comp-card-label">PegTime</span>
-            <span class="comp-card-val"><span class="status-badge green">Leaves 8:28 AM</span> — bus late 26 mins</span>
-          </div>
-        </div>
-
-        <div class="comp-card">
-          <div class="comp-card-scenario">🚧 Pembina Hwy Construction</div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Transit Schedule</span>
-            <span class="comp-card-val comp-val-muted">&quot;Refer to summer schedule&quot;</span>
-          </div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Google Maps</span>
-            <span class="comp-card-val comp-val-muted">&quot;On schedule&quot;</span>
-          </div>
-          <div class="comp-card-row comp-row-highlight">
-            <span class="comp-card-label">PegTime</span>
-            <span class="comp-card-val"><span class="status-badge green">Leaves 12:44 PM</span> — late 12 mins</span>
-          </div>
-        </div>
-
-        <div class="comp-card">
-          <div class="comp-card-scenario">🔁 Graham Ave Bottlenecks</div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Transit Schedule</span>
-            <span class="comp-card-val comp-val-muted">&quot;Buses every 4 minutes&quot;</span>
-          </div>
-          <div class="comp-card-row">
-            <span class="comp-card-label">Google Maps</span>
-            <span class="comp-card-val comp-val-muted">&quot;Buses every 4 minutes&quot;</span>
-          </div>
-          <div class="comp-card-row comp-row-highlight">
-            <span class="comp-card-label">PegTime</span>
-            <span class="comp-card-val"><span class="status-badge green">Alerts bundle</span> — advises best route</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action Waitlist Section -->
   <section class="cta-section" id="waitlist-section">
     <div class="container">
       <div class="cta-box">
@@ -472,7 +353,6 @@
       <div class="footer-right">
         <a href="#about">About</a>
         <a href="#app-flow">App Flow</a>
-        <a href="#winnipeg-reality">Why PegTime?</a>
       </div>
     </div>
   </footer>
