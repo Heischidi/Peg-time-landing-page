@@ -2137,3 +2137,82 @@ footer .container {
 .appflow-example-saving strong {
   color: var(--success);
 }
+
+/* ============================================
+   FINAL RESPONSIVE OVERRIDES
+   (must be at end of file to override section styles above)
+   ============================================ */
+
+@media (max-width: 900px) {
+  .about-inner {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .about-statement-wrap {
+    position: static !important;
+  }
+  .appflow-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 72px 0 !important;
+  }
+  .about-inner {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  .about-statement-wrap {
+    position: static !important;
+  }
+  .about-headline {
+    font-size: clamp(32px, 9vw, 44px) !important;
+    letter-spacing: -1px !important;
+  }
+  .about-lead {
+    font-size: 17px !important;
+  }
+  .appflow-section {
+    padding: 72px 0 !important;
+  }
+  .appflow-grid {
+    grid-template-columns: 1fr !important;
+    margin-top: 40px !important;
+  }
+  .appflow-card {
+    padding: 24px 20px !important;
+  }
+  .appflow-example {
+    padding: 28px 20px !important;
+    margin-top: 36px !important;
+  }
+  .appflow-example-row {
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+  }
+  .appflow-ex-arrow {
+    transform: rotate(90deg) !important;
+  }
+  .appflow-ex-item {
+    width: 100% !important;
+    text-align: center !important;
+    min-width: unset !important;
+    padding: 20px 16px !important;
+  }
+  .appflow-ex-time {
+    font-size: 26px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-headline {
+    font-size: 28px !important;
+    letter-spacing: -0.5px !important;
+  }
+  .about-lead {
+    font-size: 16px !important;
+  }
+}
