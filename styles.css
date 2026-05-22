@@ -2216,3 +2216,94 @@ footer .container {
     font-size: 16px !important;
   }
 }
+
+/* ============================================
+   COMPARISON SECTION — MOBILE CARDS
+   ============================================ */
+
+/* Desktop: show table, hide cards */
+.mobile-cards {
+  display: none;
+}
+.desktop-table {
+  display: block;
+}
+
+/* Mobile: hide table, show cards */
+@media (max-width: 700px) {
+  .desktop-table {
+    display: none !important;
+  }
+  .mobile-cards {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Comp card styles */
+.comp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-main);
+}
+
+.comp-card-scenario {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.comp-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 20px;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.comp-card-row:last-child {
+  border-bottom: none;
+}
+
+.comp-row-highlight {
+  background: linear-gradient(90deg, rgba(0, 229, 255, 0.05) 0%, transparent 100%);
+  border-left: 2px solid var(--primary);
+}
+
+.comp-card-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 105px;
+}
+
+.comp-row-highlight .comp-card-label {
+  color: var(--primary);
+}
+
+.comp-card-val {
+  font-size: 13px;
+  color: var(--text-primary);
+  text-align: right;
+  flex: 1;
+}
+
+.comp-val-muted {
+  color: var(--text-secondary);
+  font-style: italic;
+}
