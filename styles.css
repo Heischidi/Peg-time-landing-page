@@ -1605,12 +1605,27 @@ footer .container {
   .mockup-badge-2 {
     right: -40px;
   }
+  /* About section — switch to single column early */
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-statement-wrap {
+    position: static;
+  }
+  /* App flow — 2 columns on tablets */
+  .appflow-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
   h1 {
     font-size: 36px;
     letter-spacing: -1px;
+  }
+  .hero {
+    padding: 40px 0 72px;
   }
   .hero-desc {
     font-size: 16px;
@@ -1664,24 +1679,45 @@ footer .container {
     justify-content: center;
   }
   .mockup-badge {
-    display: none; /* Hide floating badges on tiny screens for maximum focus */
+    display: none;
   }
 
-  /* About section responsive */
+  /* About section — full single column, no sticky */
+  .about-section {
+    padding: 72px 0;
+  }
   .about-inner {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+  .about-statement-wrap {
+    position: static;
+  }
   .about-headline {
-    font-size: 40px;
+    font-size: clamp(32px, 9vw, 44px);
+    letter-spacing: -1px;
+  }
+  .about-lead {
+    font-size: 17px;
   }
   .about-annotation {
     font-size: 13px;
   }
 
-  /* App Flow responsive */
+  /* App Flow — single column on mobile */
+  .appflow-section {
+    padding: 72px 0;
+  }
   .appflow-grid {
     grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .appflow-card {
+    padding: 24px 20px;
+  }
+  .appflow-example {
+    padding: 28px 20px;
+    margin-top: 36px;
   }
   .appflow-example-row {
     flex-direction: column;
@@ -1694,6 +1730,62 @@ footer .container {
   .appflow-ex-item {
     width: 100%;
     text-align: center;
+    min-width: unset;
+    padding: 20px 16px;
+  }
+  .appflow-ex-time {
+    font-size: 26px;
+  }
+
+  /* Comparison table scroll hint */
+  .table-container {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Steps section */
+  .steps-section {
+    padding: 60px 0;
+  }
+  .step-card {
+    padding: 24px;
+  }
+
+  /* CTA section */
+  .cta-section {
+    padding: 72px 0;
+  }
+  .cta-box {
+    padding: 40px 20px;
+    border-radius: var(--radius-lg);
+  }
+  .cta-title {
+    font-size: 28px;
+  }
+  .cta-desc {
+    font-size: 15px;
+  }
+}
+
+/* Extra small screens (iPhone SE, Galaxy S8 etc.) */
+@media (max-width: 400px) {
+  .container {
+    padding: 0 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .about-headline {
+    font-size: 28px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .appflow-title {
+    font-size: 18px;
+  }
+  .badge {
+    font-size: 11px;
+    padding: 5px 12px;
   }
 }
 
